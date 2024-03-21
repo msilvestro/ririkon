@@ -1,7 +1,7 @@
 set windows-shell := ["powershell.exe", "-c"]
 
 build:
-    mkdir -p public
+    python -c "from pathlib import Path; Path('public').mkdir(exist_ok=True)"
     cp static/* public/
     cp songs/* public/
     emeraldya --input-dir songs/ --output-dir public/ --template template.html.jinja

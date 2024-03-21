@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://ririkon.com/sitemap.xml

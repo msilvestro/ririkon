@@ -28,7 +28,8 @@
     <meta
             name="description"
             content="Annotated translation of {{ header["title"] }} by {{ header["author"] }}."
-    />
+    >
+    <base target="_blank">
     <style media="screen">
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -247,14 +248,14 @@
 <body>
 <div id="wrapper">
     <div id="header">
-        <a href="{{ header["music_video"] }}" target="_blank">
+        <a href="{{ header["music_video"] }}">
             <img id="cover" src="{{ header["cover_art"] }}"/>
         </a>
         <div id="title">
             <h1>{{ header["title"] }}</h1>
             <h2>{{ header["author"] }}</h2>
         </div>
-        <div><a href=".">↩️</a></div>
+        <div><a href="." target="_self">↩️</a></div>
     </div>
     <div id="tooltip" style="visibility: hidden"></div>
     <div id="body">

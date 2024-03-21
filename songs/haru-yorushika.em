@@ -83,4 +83,4 @@ cover_art: https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/9e/e4/3d/9ee43dd
 まで _ until (a time); till; to; up to [particle]
 
 --- notes
-1: This is a very interesting and archaic use of the particle よ as a vocative "o" in English, the same you see in the biblical "O ye of little faith". This sentence literally translates as "O flowers, bloom!". Remember it, because the same structure will appear again later.
+1: This is an archaic usage of the particle よ as a vocative "o" in English (like in the biblical "O ye of little faith"). This sentence literally translates as "O flowers, bloom!". You will see the same structure used in later passages. ([source](https://www.reddit.com/r/LearnJapanese/comments/1bi68uq/comment/kvigdrq/), [source](https://it.hinative.com/questions/25632387))

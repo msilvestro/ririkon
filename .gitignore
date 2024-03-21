@@ -1,1 +1,5 @@
+# output HTML files that will be deployed
 public/
+
+# firebase files
+.firebase/

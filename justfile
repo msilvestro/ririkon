@@ -1,6 +1,7 @@
 set windows-shell := ["powershell.exe", "-c"]
 
 build:
+    mkdir -p public
     cp static/* public/
     cp songs/* public/
     emeraldya --input-dir songs/ --output-dir public/ --template template.html.jinja

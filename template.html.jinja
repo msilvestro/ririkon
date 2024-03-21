@@ -14,7 +14,7 @@
         <div class="section-header"><span>{{ title }}</span>{% if is_header %}
             <span class="tooltip-close" onclick="hideTooltip()">x</span>{% endif %}</div>
         <div class="section-content">
-            {% if not words %}{{ content }}{% else %}<p>{% for word in words %}{{ write_ruby(word) }}{% endfor %}</p>
+            {% if not words %}{{ content }}{% else %}<p class="word">{% for word in words %}{{ write_ruby(word) }}{% endfor %}</p>
                 <div class="tooltip-paragraph">{{ content }}</div>{% endif %}</div>
     </div>
 {%- endmacro -%}
@@ -85,7 +85,7 @@
         .word, .translation {
             display: flex;
             border-bottom: 5px solid white;
-            height: 1.5em; /* otherwise kanjis might have different heights */
+            align-items: end;
         }
 
         .word:hover, .word.active {
@@ -122,17 +122,14 @@
 
         /* Customize ruby appearance to avoid spacing issues */
         ruby {
-            display: inline-block;
-            position: relative;
+            display: flex;
+            flex-direction: column-reverse;
+            text-align: center;
         }
 
         ruby rt {
-            display: inline-block;
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: -1em;
             text-align: center;
+            margin-bottom: -0.4em;
         }
 
         #tooltip {
@@ -173,8 +170,12 @@
             line-height: 100%;
         }
 
-        #tooltip ruby {
-            margin-top: 0.5em;
+        #tooltip p.word {
+            border: 0;
+        }
+
+        #tooltip p.word:hover {
+            border: 0;
         }
     </style>
     <script>

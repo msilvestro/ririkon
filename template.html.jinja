@@ -249,6 +249,10 @@
             }
         }
 
+        function openSource() {
+            open(window.location.href + ".em", "_blank");
+        }
+
         window.onload = function () {
             const tooltip = document.getElementById("tooltip");
 
@@ -322,7 +326,7 @@
     </div>
     {%if header["footer_notes"] %}<div id="footer-note">{{ header["footer_notes"] }}</div>{% endif %}
     <div id="fine-print">
-        <p>Check the source and contribute to the translation <a href="https://github.com/msilvestro/ririkon">here</a></p>
+        <p>Check the <a href="javascript:void(0)" onclick="openSource()" target="_self">source</a> and contribute to the translation <a href="https://github.com/msilvestro/ririkon">here</a></p>
         <p>Made with <a href="https://github.com/msilvestro/emeraldya">Emeraldya</a></p>
     </div>
 </div>

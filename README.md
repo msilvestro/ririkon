@@ -2,6 +2,8 @@
 
 Beautiful Japanese songs with annotated translations.
 
+Made with [Emeraldya](https://github.com/msilvestro/emeraldya).
+
 ## How to configure
 
 - Install [Emeraldya](https://github.com/msilvestro/emeraldya) for processing Emerald files:
